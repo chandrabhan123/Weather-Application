@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Application</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <div class="main-container">
         <div class="container">
             <div class="search"><span class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
@@ -16,20 +18,48 @@
             </div>
 
             <div class="show-weather">
-            <h2>London, United Kingdom</h2>
-            <p>Tuesday, August 19, 2025 at 09:25</p>
-            <button class="weather-name">clouds</button>
-            <div class="weather-icon">
-                <i class="fa-solid fa-cloud"></i>
+                <h2>London, United Kingdom</h2>
+                <p>Tuesday, August 19, 2025 at 09:25</p>
+                <button class="weather-name">clouds</button>
+                <div class="weather-icon">
+                    <i class="fa-solid fa-cloud"></i>
+                </div>
+                <div class="temp">278&deg;</div>
+                <div class="temp-min-max">
+                    <span class="temp-min">Min: 275</span>
+                    <span class="temp-max">Max: 280</span>
+                </div>
             </div>
-            <div class="temp">278&deg;</div>
-            <div class="temp-min-max">
-                <span class="temp-min">Min: 275</span>
-                <span class="temp-max">Max: 280</span>
+            <div class="weather-details">
+                <div class="detail-item">
+                    <p><i class="fa-solid fa-thermometer"></i></p>
+                    <p><span class="detail-label">Feels like</span><br>
+                        <span class="detail-value">275&deg;</span>
+                    </p>
+                </div>
+                <div class="detail-item">
+                    <p><i class="fa-solid fa-sun"></i></p>
+                    <p><span class="detail-label">Humidity</span><br>
+                        <span class="detail-value">80%</span>
+                    </p>
+                </div>
+                <div class="detail-item">
+                    <p><i class="fa-solid fa-wind"></i></p>
+                    <p><span class="detail-label">Wind Speed:</span><br>
+                        <span class="detail-value">5 m/s</span>
+                    </p>
+                </div>
+                <div class="detail-item">
+                    <p><i class="fa-solid fa-tachometer-alt"></i></p>
+                    <p><span class="detail-label">Pressure:</span><br>
+                        <span class="detail-value">1012 hPa</span>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-    
+
     <script src="app.js"></script>
 </body>
+
 </html>
